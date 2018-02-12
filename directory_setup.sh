@@ -44,6 +44,10 @@ export QC_HTML_DIR=${QC_OUT_DIR}/fastqc_html
 
 # This is the directory for your trimmed data
 export TRIM_DATA_DIR=${EXP_DIR}/trim_data
+# This is the directory for your FastQC result files for your trimmed data
+export TRIM_QC_DIR=${EXP_DIR}/trim_fastqc_out
+# This is the subdirectory for your HTML FastQC result files for your trimmed data
+export TRIM_QC_HTML_DIR=${TRIM_QC_DIR}/trim_fastqc_html
 # This is the directory for your alignment result files from your trimmed data
 export TRIM_ALIGNMENTS_DIR=${EXP_DIR}/trim_alignments
 # This is the directory for your abundance estimated result files from your trimmed data
@@ -64,6 +68,8 @@ mkdir -p ${QC_OUT_DIR}
 mkdir -p ${QC_HTML_DIR}
 
 mkdir -p ${TRIM_DATA_DIR}
+mkdir -p ${TRIM_QC_DIR}
+mkdir -p ${TRIM_QC_HTML_DIR}
 mkdir -p ${TRIM_ALIGNMENTS_DIR}
 mkdir -p ${TRIM_COUNTS_DIR}
 
