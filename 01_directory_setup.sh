@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# This tells the program to stop if it runs into any issues
-# -e Exit immediately when a command fails
-# -u Treats unset/unbound variables as an error and exits immediately
-# -x Prints each command before executing it -- helpful for debugging
+# set tells the program to stop if it runs into any issues, the flag descriptions are as follows:
+# -e Exit immediately when a command fails.
+# -u Treats unset/unbound variables as an error and exits immediately.
+# -x Prints each command before executing it -- this is helpful for debugging.
 # -o Sets the exit code (0 is successful) to the that of the rightmost command...continued on next line
 # -o If the first command in a pipeline failed it will be carried through to the end of the pipeline and still exit instead of continuing through the script
 set -euxo pipefail
 
 # Change experiment name
 export EXP_NAME=MY_PROJECT
-# Change root dir if necessary
+# Change root directory if necessary
 export ROOT_DIR=/data/users/$USER/BioinformaticsSG
-# Change 
+# Change sub directory if necessary
 export SUB_DIR=${ROOT_DIR}/Getting-Ready-for-Analysis
 # Change location of reference genome
 export REF_DIR=${ROOT_DIR}/griffith_data/refs
@@ -52,6 +52,7 @@ export TRIM_QC_HTML_DIR=${TRIM_QC_DIR}/trim_fastqc_html
 export TRIM_ALIGNMENTS_DIR=${EXP_DIR}/trim_alignments
 # This is the directory for your abundance estimated result files from your trimmed data
 export TRIM_COUNTS_DIR=${EXP_DIR}/trim_counts
+
 # Below is an example of setting a path to file that you may need for the program you are using.
 # These files are used to remove the adapters from the sequences. 
 # export SE_ADAPTER_DIR=/home/stacey/miniconda3/pkgs/trimmomatic-0.36-5/share/trimmomatic-0.36-5/adapters/TruSeq2-SE.fa
