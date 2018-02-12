@@ -40,7 +40,7 @@ export DE_DIR=${EXP_DIR}/DE_analysis
 # This is the directory for your FastQC result files
 export QC_OUT_DIR=${EXP_DIR}/fastqc_out
 # This is the subdirectory for your HTML FastQC result files
-export QC_HTML_DIR=${FQOUT_DIR}/fastqc_html
+export QC_HTML_DIR=${QC_OUT_DIR}/fastqc_html
 
 # This is the directory for your trimmed data
 export TRIM_DATA_DIR=${EXP_DIR}/trim_data
