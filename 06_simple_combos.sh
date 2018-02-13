@@ -15,6 +15,6 @@ echo "Run by `whoami` on `date`" > ${RUNLOG}
 
 for ID in `seq $2 $3`; do
     echo "*** Combo ${ID} is up!"
-    echo concatenate ${SIMPLE_DIR}/*${FILE_ID}* >> ${RUNLOG}
-    cat ${SIMPLE_DIR}/*${FILE_ID}* > ${COMBO_SIMPLE_DIR}/combined_simple_file_${FILE_ID}.txt
+    echo concatenate ${SIMPLE_DIR}/*${ID}* >> ${RUNLOG}
+    cat ${SIMPLE_DIR}/*${ID}* > ${COMBO_SIMPLE_DIR}/combined_simple_file_${ID}.txt
 done
