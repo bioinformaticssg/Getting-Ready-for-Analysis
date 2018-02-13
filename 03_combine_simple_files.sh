@@ -3,6 +3,7 @@
 # Exit this script on any error.
 set -euxo pipefail
 
+SIMPLE_DIR=/data/users/$USER/BioinformaticsSG/Getting-Ready-for-Analysis/simple_files
 COMBO_SIMPLE_DIR=/data/users/$USER/BioinformaticsSG/Getting-Ready-for-Analysis/combo_simple_files
 
 mkdir -p ${COMBO_SIMPLE_DIR}
