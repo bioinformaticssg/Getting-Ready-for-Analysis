@@ -8,9 +8,6 @@ SIMPLE_DIR=/data/users/$USER/BioinformaticsSG/Getting-Ready-for-Analysis/simple_
 RUNLOG=${SIMPLE_DIR}/simple_files_runlog.txt
 echo "Run by `whoami` on `date`" > ${RUNLOG}
 
-SAMPLES=${SAMPLE_DIR}/sample_list.txt
-echo "SAMPLE INFO" > ${SAMPLES}
-
 for ID in `seq 1 4`; do
     FILE_ID=`printf %0.1d $ID`
     echo "*** Combo $FILE_ID is up!"
