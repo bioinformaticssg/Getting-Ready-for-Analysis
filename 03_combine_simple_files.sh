@@ -5,6 +5,8 @@ set -euxo pipefail
 
 COMBO_SIMPLE_DIR=/data/users/$USER/BioinformaticsSG/Getting-Ready-for-Analysis/combo_simple_files
 
+mkdir -p ${COMBO_SIMPLE_DIR}
+
 RUNLOG=${COMBO_SIMPLE_DIR}/simple_files_runlog.txt
 echo "Run by `whoami` on `date`" > ${RUNLOG}
 
